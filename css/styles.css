@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; /*Quitar los bordes por defecto*/
+    font-family: "Ubuntu", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.1s;
+}
+
+/*For switch*/
+.switch.container{
+    background: #262431;
+}
+
+.rounded-background{
+    width: 110rem;/**/
+    height: 90rem;/**/
+    border-radius: 10%;
+    background: linear-gradient(225deg, #ff900b, #ff505b);
+    position: absolute;
+    top: -90%;/**/
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 1rem 5rem rgba(248, 106, 59, 0.4);
+}
+
+/*For switch*/
+.switch .rounded-background{
+    background: linear-gradient(225deg, #93cdff, #3c3a74);
+    box-shadow: 0 1rem 5rem rgba(60, 58, 115, 0.5);
+}
+
+.wrapper-form{
+    width: 70rem;
+    height: 50rem;
+    background: white;
+    display: flex;
+    border-radius: 3rem;
+    box-shadow: 0 2rem 6rem rgba(6, 12, 15, 0.4);
+    position: relative;
+    z-index: 100;
+    transition: all 0.1s;
+}
+
+/*Para interruptor*/
+.switch .wrapper-form{
+    background: #262431;
+
+}
+
+.wrapper-form-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 0 14rem 0;
+}
+
+.sun-moon{
+    width: 12rem;
+    height: 12rem;
+    background: linear-gradient(225deg, #ff900b, #ff505b);
+    border-radius: 50%;
+    /*For switch*/
+    position: relative;
+}
+
+/*For switch*/
+.switch .sun-moon{
+    background: linear-gradient(225deg, #93cdff, #3c3a74);
+}
+
+/*For switch*/
+.sun-moon::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    background: #fff;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+/*For switch*/
+.switch .sun-moon::after{
+    background: #262431;
+    transform: scale(1);
+}
+
+.wrapper-form-left button{
+    width: 20rem;
+    height: 4rem;
+    background: #e8e8e8;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/*For switch*/
+.switch .wrapper-form-left button{
+    background: #1e1c28;
+    color: #bbb;
+}
+
+.wrapper-form-left span{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.background{
+    background: white;
+    border-radius: 3rem;
+    left: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+/*For switch*/
+.switch .background{
+    transform: translateX(100%);
+    background: #34323e;
+}
+
+.day, .night{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day{
+    left: 0;
+}
+
+.night{
+    right: 0;
+}
+
+.wrapper-form-right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 0;
+}
+
+.wrapper-form-right h1{
+    font-size: 5rem;
+    color: #777;
+}
+
+.field{
+    width: 30rem;
+    height: 5rem;
+    border: none;
+    border-bottom: 0.2rem solid #bbb;
+    font-size: 1.4rem;
+    color: #555;
+    background: transparent;
+}
+
+/*For switch*/
+.switch .field{
+    color: #bbb;
+}
+
+.field::placeholder{
+    text-transform: uppercase;
+    font-size: 1.4rem ;
+    color: #bbb;
+    letter-spacing: 0.1rem;
+}
+
+.wrapper-form-right .msg{
+    height: 8rem;
+    resize: none;
+}
+
+.wrapper-form-right button{
+    width: 30rem;
+    height: 4.5rem;
+    margin-top: 1.5rem;
+    background: #e8e8e8;
+    border: none;
+    border-radius: 3rem;
+    color: #262431;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+/*For switch*/
+.switch .wrapper-form-right button{
+    background: #262431;
+    color: #bbb;
+}
